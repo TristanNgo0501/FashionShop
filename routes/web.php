@@ -16,6 +16,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/admin/dashboard', [DashboardController::class, 'dashboard'])->name('index');
-Route::get('/', [HomeController::class, 'homepage'])->name('home');
+Route::get('/admin', [DashboardController::class, 'dashboard'])->name('index');
+Route::get('/home', [HomeController::class, 'homepage'])->name('home');
 Route::get('/product-list', [ProductController::class, 'index'])->name('productList');
