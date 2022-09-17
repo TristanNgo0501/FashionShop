@@ -5,7 +5,7 @@
                 <li class="nav-item">
                     <a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
                         <i class="fas fa-home"></i>
-                        <p>Welcome to Admin Page</p>
+                        <p>Dashboard</p>
                         <span class="caret"></span>
                     </a>
                     <div class="collapse" id="dashboard">
