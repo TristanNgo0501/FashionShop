@@ -50,11 +50,18 @@
       @include('admin.layout.sidebar')
       <!-- End Sidebar -->
 
-      <div class="main-panel">
+      <div class="main-panel"
+        {!! (Route::currentRouteName() == "index"? '':'style="padding-top: 100px"') !!}
+{{--          @if(!Route::currentRouteName('index'))--}}
+{{--            style="padding-top: 100px;"--}}
+{{--              @endif--}}
+{{--          {{dd(Route::currentRouteName())}}--}}
+      >
         @yield('content')
         @include('admin.layout.footer')
       </div>
     </div>
+    @yield('myjs')
     <!--   Core JS Files   -->
     <script src="{{ asset('assets/js/core/jquery.3.2.1.min.js') }}"></script>
     <script src="{{ asset('assets/js/core/popper.min.js') }}"></script>

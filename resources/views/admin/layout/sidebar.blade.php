@@ -11,7 +11,7 @@
                     <div class="collapse" id="dashboard">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="#">
+                                <a href="{{route('index')}}">
                                     <span class="sub-item">Dashboard 1</span>
                                 </a>
                             </li>
@@ -52,11 +52,6 @@
                                     <span class="sub-item">Cart Management</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <span class="sub-item">Cart Creation</span>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </li>
@@ -69,12 +64,12 @@
                     <div class="collapse" id="forms">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a  href="#">
+                                <a href="#">
                                     <span class="sub-item">Customer Management</span>
                                 </a>
                             </li>
                             <li>
-                                <a  href="#">
+                                <a href="#">
                                     <span class="sub-item">Customer Creation</span>
                                 </a>
                             </li>
@@ -90,12 +85,12 @@
                     <div class="collapse" id="products">
                         <ul class="nav nav-collapse">
                             <li>
-                                <a href="#">
+                                <a href="{{ route('product.index')}}">
                                     <span class="sub-item">Product Management</span>
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
+                                <a href="{{ route('product.create')}}">
                                     <span class="sub-item">Product Creation</span>
                                 </a>
                             </li>
@@ -103,8 +98,29 @@
                     </div>
                 </li>
                 <li class="nav-item">
+                    <a data-toggle="collapse" href="#categories">
+                        <i class="fas fa-shapes"></i>
+                        <p>Category</p>
+                        <span class="caret"></span>
+                    </a>
+                    <div class="collapse" id="categories">
+                        <ul class="nav nav-collapse">
+                            <li>
+                                <a href="{{ route('category.index') }}">
+                                    <span class="sub-item">Category Management</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="{{ route('category.create') }}">
+                                    <span class="sub-item">Category Creation</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
                     <a data-toggle="collapse" href="#orders">
-                        <i class="fa fa-money-check"></i>
+                        <i class="fas fa-money-bill-wave"></i>
                         <p>Order</p>
                         <span class="caret"></span>
                     </a>
@@ -115,17 +131,12 @@
                                     <span class="sub-item">Order Management</span>
                                 </a>
                             </li>
-                            <li>
-                                <a href="#">
-                                    <span class="sub-item">Order Creation</span>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </li>
                 <li class="nav-item">
                     <a data-toggle="collapse" href="#blogs">
-                        <i class="fab fa-blogger-b"></i>
+                        <i class="fab fa-blogger"></i>
                         <p>Blog</p>
                         <span class="caret"></span>
                     </a>

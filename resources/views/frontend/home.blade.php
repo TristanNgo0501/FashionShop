@@ -15,7 +15,7 @@
                                     crafted with an unwavering commitment to exceptional
                                     quality.
                                 </p>
-                                <a href="{{ route('productList') }}" class="primary-btn">Shop now <span class="arrow_right"></span></a>
+                                <a href="{{ route('home') }}" class="primary-btn">Shop now <span class="arrow_right"></span></a>
                                 <div class="hero__social">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
                                     <a href="#"><i class="fa fa-twitter"></i></a>

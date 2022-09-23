@@ -3,7 +3,11 @@
 namespace App\Http\Controllers\Backend;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ProductFormRequest;
+use App\Models\Brand;
+use App\Models\Category;
 use App\Models\Product;
+use App\Models\Size;
 use Illuminate\Http\Request;
 
 class ProductController extends Controller
@@ -15,7 +19,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        return view('admin.component.product.index');
     }
 
     /**
@@ -25,7 +29,10 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        $categories = Category::all();
+        $brands = Brand::all();
+        $sizes = Size::all();
+        return view('admin.component.product.create', compact('categories', 'brands', 'sizes'));
     }
 
     /**
@@ -34,9 +41,11 @@ class ProductController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ProductFormRequest $request)
     {
-        //
+        $validatedData = $request->validated();
+
+
     }
 
     /**
